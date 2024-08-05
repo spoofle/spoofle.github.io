@@ -1,0 +1,216 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Raleway:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1, h2 {
+    color: #6c5b7b; /* Soft pastel color */
+    margin: 0;
+    padding: 5px;
+}
+h5 {
+    color: #6c5b7b; /* Soft pastel color */
+    margin: 0;
+    padding: px;
+}
+
+a {
+    color: #ff6f61; /* Pastel coral */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Space below the header */
+}
+
+nav a {
+    margin: 0 15px;
+    font-weight: 600;
+    color: #ff6f61; /* Consistent with link color */
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+/* Intro Section */
+.intro {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Section Styles */
+section {
+    min-height: 600px; /* Minimum height for each section */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between sections */
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #ffffff00;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+section h2 {
+    color: #6c5b7b; /* Soft pastel color */
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* About Section Layout */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the image and the text */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.profile-pic {
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid #ff6f61; /* Pastel coral border */
+}
+
+.about-text {
+    flex: 1; /* Allows text to take up remaining space */
+}
+
+.scrollable-section {
+    max-height: 5600px; /* Set a maximum height for scrolling */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    padding: 20px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Footer Styles */
+footer {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px; /* Space above the footer */
+}
+
+footer p {
+    margin: 0;
+    color: #6c5b7b; /* Matching footer text color */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes up full height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+.main-content {
+    flex: 1; /* Allows main content to expand and push footer to the bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+
+    header, footer, section {
+        margin-bottom: 15px; /* Less space on smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+    
+}
+/* Font Awesome icon styles */
+.fas, .far, .fab {
+    color: #ffe991; /* Default icon color */
+    font-size: 24px; /* Adjust icon size */
+}
+
+.fas.fa-star {
+    color: #e3b21d; /* Elegant gold color */
+    font-size: 24px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Custom hover effect for icons */
+.fas:hover, .far:hover, .fab:hover {
+    color: #f7f780; /* Change color on hover */
+}
+
+/* Example stars added directly */
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background: #fff;
+    width: 2px;
+    height: 2px;
+    animation: twinkle 1.5s infinite ease-in-out;
+}
+
+.star:nth-child(even) {
+    animation-duration: 2s;
+}
+
+.star:nth-child(odd) {
+    animation-duration: 1s;
+}
+
+/* Twinkle animation */
+@keyframes twinkle {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
