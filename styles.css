@@ -3,29 +3,26 @@
 
 /* General Styles */
 body {
-    font-family: 'Quicksand', sans-serif;
+    background: #e0f7fa;
+    color: #333; /* Light text color */
+    font-family: 'Quicksand', sans-serif; /* Modern, clean font */
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
-    color: #333;
-    display: flex;
-    flex-direction: column;
 }
-
 
 h1, h2 {
-    color: #6c5b7b; /* Soft pastel color */
+    color: #ffffff;
     margin: 0;
-    padding: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 h5 {
-    color: #6c5b7b; /* Soft pastel color */
+    color: #00bfff; /* Soft pastel color */
     margin: 0;
     padding: px;
 }
 
 a {
-    color: #ff6f61; /* Pastel coral */
+    color: #004d40; /* Pastel coral */
     text-decoration: none;
 }
 a:hover {
@@ -34,22 +31,23 @@ a:hover {
 
 /* Header Styles */
 header {
-    background: rgba(255, 255, 255, 0);
+    background: #004d40;
+    color: #e0f7fa;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 20px; /* Space below the header */
+    border-bottom: 3px solid #00796b; /* Teal accent */
 }
 
 nav a {
+    color: #e0f7fa;
+    text-decoration: none;
     margin: 0 15px;
-    font-weight: 600;
-    color: #ff6f61; /* Consistent with link color */
-    font-size: 1.1em;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #333;
+    color: #ffffff; /* Lighter on hover */
+    text-shadow: 0 0 8px #ffffff;
 }
 
 /* Intro Section */
@@ -77,14 +75,14 @@ section {
     margin-bottom: 20px; /* Space between sections */
     margin-left: 50px;
     margin-right: 50px;
-    background-color: #ffffff00;
+    background-color: #e8e8e829;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 
 }
 
 section h2 {
-    color: #6c5b7b; /* Soft pastel color */
+    color: #004d40; /* Soft pastel color */
     margin-bottom: 20px;
 }
 
@@ -95,6 +93,11 @@ section ul {
 
 section ul li {
     margin-bottom: 10px;
+}
+
+h4 {
+    color: #00170d;
+    size: 20px;
 }
 
 /* About Section Layout */
@@ -109,7 +112,7 @@ section ul li {
     width: 150px; /* Adjust width as needed */
     height: 150px; /* Adjust height as needed */
     border-radius: 50%; /* Makes the image circular */
-    border: 3px solid #ff6f61; /* Pastel coral border */
+    border: 3px solid #01826d; /* Pastel coral border */
 }
 
 .about-text {
@@ -121,25 +124,42 @@ section ul li {
     overflow-y: auto;  /* Enable vertical scrolling */
     padding: 20px;
     margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background-color: #ffffff98; /* Slightly lighter background */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.button {
+    background: #00bfff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background: #1e90ff; /* Slightly darker blue */
+    transform: scale(1.05); /* Slightly larger on hover */
 }
 
 
 /* Footer Styles */
+
 footer {
-    background: rgba(255, 255, 255, 0.5);
+    background: #004d40;
+    color: #e0f7fa;
     padding: 20px;
     text-align: center;
-    border-top: 1px solid #ddd;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
-    margin-top: 20px; /* Space above the footer */
+    border-top: 2px solid #00bfff;
 }
-
 footer p {
     margin: 0;
-    color: #6c5b7b; /* Matching footer text color */
+    color: #ffffff; /* Matching footer text color */
 }
 
 html {
@@ -176,19 +196,24 @@ html, body {
 }
 /* Font Awesome icon styles */
 .fas, .far, .fab {
-    color: #ffe991; /* Default icon color */
-    font-size: 24px; /* Adjust icon size */
+    color: #00170d; /* Default icon color */
+    font-size: 18px; /* Adjust icon size */
 }
 
 .fas.fa-star {
-    color: #e3b21d; /* Elegant gold color */
+    color: #ffffff; /* Elegant gold color */
     font-size: 24px;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
-/* Custom hover effect for icons */
-.fas:hover, .far:hover, .fab:hover {
-    color: #f7f780; /* Change color on hover */
+.fa-brands.fa-github {
+    color: #004d40;
+    size: 20px;
+}
+
+.fa-brands.fa-linkedin {
+    color: #004d40;
+    size: 20px;
 }
 
 /* Example stars added directly */
