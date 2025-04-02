@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 interface Project {
@@ -6,81 +7,86 @@ interface Project {
   image: string;
   tech: string;
   link: string;
+  learnMoreLink: string;
 }
 
-const personalProjects: Project[] = [
-  {
-    title: "Recall Pit",
-    description: "A mobile app that processes and displays product recalls from USDA, FDA, and CPSC datasets in a user-friendly interface. Achieved 800+ downloads on Google Play and App Store.",
-    image: "/images/projects/recall-pit.png",
-    tech: "Flutter, Dart, Google Cloud, Google Translate API",
-    link: "https://recallpit.com/"
-  }
-  // {
-  //   title: "AI Healthcare Assistant",
-  //   description: "An intelligent healthcare assistant that helps patients understand their medical conditions and treatment options.",
-  //   image: "/images/projects/ai-healthcare.png",
-  //   tech: "React, Node.js, OpenAI API",
-  //   link: "#"
-  // },
-  // {
-  //   title: "Mobile Fitness App",
-  //   description: "A comprehensive fitness tracking application with personalized workout plans and progress monitoring.",
-  //   image: "/images/projects/fitness-app.png",
-  //   tech: "React Native, Firebase, Redux",
-  //   link: "#"
-  // }
-];
+interface ProjectSection {
+  title: string;
+  description: string;
+  projects: Project[];
+}
 
-const hack4ImpactProjects: Project[] = [
+const projectSections: ProjectSection[] = [
   {
-    title: "Winrock International Dashboard",
-    description: "Currently leading development of a comprehensive dashboard and forms system to streamline information processing for Winrock International. As co-tech lead, focusing on creating efficient data management solutions.",
-    image: "/images/projects/winrock_international_logo.jpeg",
-    tech: "React, TypeScript, Firebase",
-    link: "https://github.com/Hack4Impact-UMD/winrock-international"
+    title: "Featured Projects",
+    description: "A collection of my most impactful projects, showcasing my skills in software development and problem-solving.",
+    projects: [
+      {
+        title: "Recall Pit",
+        description: "A mobile app that processes and displays product recalls from USDA, FDA, and CPSC datasets in a user-friendly interface.",
+        image: "/images/projects/recall-pit.png",
+        tech: "Flutter, Dart, Google Cloud, Google Translate API",
+        link: "https://recallpit.com/",
+        learnMoreLink: "/projects/recall-pit"
+      },
+      {
+        title: "Microsoft Hack4Good 3.0",
+        description: "A multilingual chatbot called FRAME assistant designed for aiding accurate data collection and improving food donation processes.",
+        image: "/images/projects/microsoft.png",
+        tech: "Azure OpenAI Services, Copilot Studio, Azure AI",
+        link: "https://www.foodbanking.org/",
+        learnMoreLink: "/projects/ai-healthcare"
+      }
+    ]
   },
   {
-    title: "Hack4Impact Application Tool",
-    description: "Led the overhaul of the application process for 200+ prospective applicants, improving user experience and streamlining the application workflow. Enhanced the system's efficiency and user interface.",
-    image: "/images/projects/h4i-logo.jpeg",
-    tech: "React, Typescript, Firebase",
-    link: "https://docs.google.com/presentation/d/1IGwWg_PbLcLFFkpzJOKfMqFqBDPa3l0k/edit?usp=sharing&ouid=109276528809072004783&rtpof=true&sd=true"
-  },
-  {
-    title: "All District Reads",
-    description: "Led mobile and web development for the All District Reads nonprofit, creating solutions to improve literacy and education accessibility.",
-    image: "/images/projects/All-District-Reads.png",
-    tech: "React Native, React, Typescript, Firebase",
-    link: "https://github.com/Hack4Impact-UMD/ADR-Mobile"
+    title: "Other Projects",
+    description: "Additional projects demonstrating my diverse skill set and experience.",
+    projects: [
+      {
+        title: "Winrock International Dashboard",
+        description: "A comprehensive dashboard and forms system to streamline information processing for Winrock International.",
+        image: "/images/projects/winrock_international_logo.jpeg",
+        tech: "React, TypeScript, Node.js",
+        link: "#",
+        learnMoreLink: "/projects/winrock-dashboard"
+      },
+      {
+        title: "Hack4Impact Application Tool",
+        description: "Led the overhaul of the application process for 200+ prospective applicants.",
+        image: "/images/projects/h4i-application.png",
+        tech: "React, Node.js, MongoDB",
+        link: "#",
+        learnMoreLink: "/projects/h4i-application"
+      },
+      {
+        title: "All District Reads",
+        description: "Led mobile and web development for the All District Reads nonprofit.",
+        image: "/images/projects/all-district-reads.png",
+        tech: "React Native, React, Node.js",
+        link: "#",
+        learnMoreLink: "/projects/all-district-reads"
+      }
+    ]
   }
 ];
 
-const ProjectSection = ({ title, description, projects }: { title: string; description: string; projects: Project[] }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6 }}
-    className="project-section"
-  >
+const ProjectSection = ({ title, description, projects }: ProjectSection) => (
+  <div className="project-section">
     <h2 className="section-title">{title}</h2>
     <p className="section-description">{description}</p>
     <div className="portfolio-grid">
       {projects.map((project, index) => (
         <motion.div
           key={project.title}
-          className="portfolio-card"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: index * 0.2 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+          className="portfolio-card"
         >
           <div className="portfolio-content">
             <div className="project-header">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="project-logo"
-              />
+              <img src={project.image} alt={project.title} className="project-logo" />
               <h3>{project.title}</h3>
             </div>
             <p>{project.description}</p>
@@ -89,31 +95,28 @@ const ProjectSection = ({ title, description, projects }: { title: string; descr
                 <span key={tech} className="tech-tag">{tech}</span>
               ))}
             </div>
-            <a href={project.link} className="button">
-              View Project
-            </a>
+            <div className="project-links">
+              <a href={project.link} className="button">
+                View Project
+              </a>
+              <Link to={project.learnMoreLink} className="button button-secondary">
+                Learn More
+              </Link>
+            </div>
           </div>
         </motion.div>
       ))}
     </div>
-  </motion.div>
+  </div>
 );
 
 const Portfolio = () => {
   return (
-    <section className="portfolio-section">
+    <section id="portfolio" className="portfolio-section">
       <div className="container">
-        <h2 className="section-title">Portfolio</h2>
-        <ProjectSection
-          title="Personal Projects"
-          description="A collection of my personal projects showcasing my skills in software development and AI."
-          projects={personalProjects}
-        />
-        <ProjectSection
-          title="Hack4Impact Projects"
-          description="Projects I've led as a Tech Lead at Hack4Impact, focusing on creating positive social impact through technology."
-          projects={hack4ImpactProjects}
-        />
+        {projectSections.map((section, index) => (
+          <ProjectSection key={index} {...section} />
+        ))}
       </div>
     </section>
   );

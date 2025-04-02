@@ -889,18 +889,17 @@ body {
   margin-bottom: 1rem;
 }
 
-.project-logo {
-  width: 60px;
-  height: 60px;
+.project-header .project-logo {
+  width: 48px;
+  height: 48px;
   object-fit: contain;
-  border-radius: 8px;
-  background-color: var(--section-bg);
-  padding: 4px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 .project-header h3 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--text-color);
 }
 
@@ -937,12 +936,16 @@ body {
 
 @media (max-width: 768px) {
   .project-header {
-    flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
+  }
+
+  .project-header .project-logo {
+    width: 40px;
+    height: 40px;
   }
 
   .project-header h3 {
-    margin-right: 0;
+    font-size: 1.1rem;
   }
 
   .project-card {
@@ -1020,4 +1023,347 @@ body {
   left: 0;
   color: var(--primary-color);
   font-weight: bold;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-color);
+  color: var(--background);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary-color);
+  min-width: 120px;
+  text-align: center;
+}
+
+.button:hover {
+  background: transparent;
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(167, 139, 250, 0.2);
+}
+
+.button-secondary {
+  display: inline-block;
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  font-family: 'Space Grotesk', sans-serif;
+  min-width: 120px;
+  text-align: center;
+}
+
+.button-secondary:hover {
+  background: var(--primary-color);
+  color: var(--background);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md), var(--glow);
+}
+
+.project-detail {
+  padding: 4rem 0;
+  background-color: var(--section-bg);
+  min-height: 100vh;
+}
+
+.project-detail .project-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.project-detail .project-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.project-detail .project-title h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-detail .project-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-detail section {
+  margin-bottom: 3rem;
+}
+
+.project-detail section h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.project-detail section p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-detail section ul li {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.project-detail section ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.screenshots-grid img {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.screenshots-grid img:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.abstract-preview {
+  width: 100%;
+  height: 200px;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background-color: var(--background);
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+.button-secondary {
+  display: inline-block;
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  font-family: 'Space Grotesk', sans-serif;
+  min-width: 120px;
+  text-align: center;
+}
+
+.button-secondary:hover {
+  background: var(--primary-color);
+  color: var(--background);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md), var(--glow);
+}
+
+@media (max-width: 768px) {
+  .abstract-preview {
+    height: 150px;
+  }
+  
+  .project-links {
+    justify-content: center;
+  }
+
+  .project-detail .project-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .project-detail .project-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .project-detail .project-title h1 {
+    font-size: 2rem;
+  }
+
+  .project-detail section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.portfolio-section + .research-section {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.projects-research-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 4rem 0;
+  background-color: var(--section-bg);
+}
+
+.projects-research-container .portfolio-section,
+.projects-research-container .research-section {
+  padding: 0;
+  background: none;
+}
+
+@media (max-width: 1024px) {
+  .projects-research-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+/* Remove all back button related styles */
+.back-button,
+.back-link,
+.back-arrow,
+.back-label {
+  display: none;
+}
+
+/* Research Abstract Styles */
+.research-abstract {
+  padding: 4rem 0;
+  background-color: var(--section-bg);
+  min-height: 100vh;
+}
+
+.research-abstract .project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.research-abstract .project-title {
+  flex: 1;
+}
+
+.research-abstract .project-title h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.research-abstract .project-period {
+  color: var(--primary-color);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.research-abstract .research-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.research-abstract section {
+  margin-bottom: 3rem;
+}
+
+.research-abstract section h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.research-abstract section p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.research-abstract section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.research-abstract section ul li {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.research-abstract section ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .research-abstract .project-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .research-abstract .project-title h1 {
+    font-size: 2rem;
+  }
+
+  .research-abstract section h2 {
+    font-size: 1.5rem;
+  }
 }

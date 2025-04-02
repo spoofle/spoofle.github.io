@@ -101,7 +101,7 @@ const About = () => {
                       <li>Maryland Science Cafe Treasurer</li>
                       <li>Perception and Robotics Group: Computer Vision Researcher</li>
                       <li>Teaching Assistant for CMSC 330: Organization of Programming Languages</li>
-                      <li>Teaching Assistant for CMSC 389O: The Coding Interview</li>
+                      <li>Head Teaching Assistant for CMSC 389O: The Coding Interview</li>
                     </ul>
                     <div className="courses-section">
                       <h5>Relevant Coursework</h5>

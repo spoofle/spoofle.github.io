@@ -1,20 +1,39 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Blog from './components/Blog';
 import Resume from './components/Resume';
 import Research from './components/Research';
+import Footer from './components/Footer';
+import ProjectDetail from './components/ProjectDetail';
+import ResearchAbstract from './components/ResearchAbstract';
 
-function App() {
+const Home = () => {
+  return (
+    <>
+      <About />
+      <div className="projects-research-container">
+        <Portfolio />
+        <Research />
+      </div>
+      <Blog />
+      <Resume />
+    </>
+  );
+};
+
+const App = () => {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
+      <div className="app">
         <Header />
-        <main className="flex-grow">
+        <main>
           <Routes>
-            <Route path="/" element={<About />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/projects/:projectId" element={<ProjectDetail />} />
+            <Route path="/research/:projectId" element={<ResearchAbstract />} />
+            <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/resume" element={<Resume />} />
@@ -25,6 +44,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;
