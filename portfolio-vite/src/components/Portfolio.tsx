@@ -37,22 +37,22 @@ const hack4ImpactProjects: Project[] = [
     title: "Winrock International Dashboard",
     description: "Currently leading development of a comprehensive dashboard and forms system to streamline information processing for Winrock International. As co-tech lead, focusing on creating efficient data management solutions.",
     image: "/images/projects/winrock_international_logo.jpeg",
-    tech: "React, TypeScript, Node.js",
-    link: "#"
+    tech: "React, TypeScript, Firebase",
+    link: "https://github.com/Hack4Impact-UMD/winrock-international"
   },
   {
     title: "Hack4Impact Application Tool",
     description: "Led the overhaul of the application process for 200+ prospective applicants, improving user experience and streamlining the application workflow. Enhanced the system's efficiency and user interface.",
     image: "/images/projects/h4i-logo.jpeg",
     tech: "React, Typescript, Firebase",
-    link: "#"
+    link: "https://docs.google.com/presentation/d/1IGwWg_PbLcLFFkpzJOKfMqFqBDPa3l0k/edit?usp=sharing&ouid=109276528809072004783&rtpof=true&sd=true"
   },
   {
     title: "All District Reads",
     description: "Led mobile and web development for the All District Reads nonprofit, creating solutions to improve literacy and education accessibility.",
     image: "/images/projects/All-District-Reads.png",
     tech: "React Native, React, Typescript, Firebase",
-    link: "#"
+    link: "https://github.com/Hack4Impact-UMD/ADR-Mobile"
   }
 ];
 

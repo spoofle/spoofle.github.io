@@ -33,7 +33,7 @@ const About = () => {
                 <FontAwesomeIcon icon={faGithub} />
               </a>
               <a 
-                href="https://linkedin.com/in/hitathota" 
+                href="https://linkedin.com/in/hita-thota" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="social-link"
@@ -93,12 +93,40 @@ const About = () => {
                       />
                       University of Maryland
                     </h4>
-                    <p>B.S. in Computer Science + Neuroscience</p>
+                    <p>B.S. in Computer Science: Machine Learning Track</p>
+                    <p className="minor">Minor in Neuroscience</p>
                     <ul className="achievements-list">
-                      <li>Dean's List</li>
+                      <li>Dean's List: Spring 2024, Fall 2024</li>
                       <li>Hack4Impact Tech Lead</li>
-                      <li>Association for Computing Machinery (ACM)</li>
+                      <li>Maryland Science Cafe Treasurer</li>
+                      <li>Perception and Robotics Group: Computer Vision Researcher</li>
+                      <li>Teaching Assistant for CMSC 330: Organization of Programming Languages</li>
+                      <li>Teaching Assistant for CMSC 389O: The Coding Interview</li>
                     </ul>
+                    <div className="courses-section">
+                      <h5>Relevant Coursework</h5>
+                      <div className="courses-grid">
+                        <div className="course-category">
+                          <h6>Computer Science</h6>
+                          <ul className="courses-list">
+                            <li>Introduction to Machine Learning</li>
+                            <li>Natural Language Processing</li>
+                            <li>Computer Vision</li>
+                            <li>Organization of Programming Languages</li>
+                            <li>Algorithms</li>
+                            <li>Introduction to Computer Systems</li>
+                          </ul>
+                        </div>
+                        <div className="course-category">
+                          <h6>Neuroscience</h6>
+                          <ul className="courses-list">
+                            <li>Introduction to Neuroscience</li>
+                            <li>Science of Sleep and Biological Rhythms</li>
+                            {/* <li>Neurobiology</li> */}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -119,10 +147,6 @@ const About = () => {
                 <div className="timeline-item">
                   <div className="timeline-year">2025</div>
                   <div className="timeline-content">
-                    {/* <h4>
-                      <FontAwesomeIcon icon={faShopify} className="company-icon" />
-                      Shopify
-                    </h4> */}
                     <h4>
                       <img 
                         src="/public/images/logos/shopify.png" 
@@ -134,9 +158,6 @@ const About = () => {
                     <p>Incoming Software Engineering Intern</p>
                     <ul className="achievements-list">
                       <li>Summer 2025 - Team TBD</li>
-                      {/* <li>Developed and maintained Shopify's core platform features</li>
-                      <li>Collaborated with cross-functional teams to improve user experience</li>
-                      <li>Implemented new features using modern web technologies</li> */}
                     </ul>
                   </div>
                 </div>

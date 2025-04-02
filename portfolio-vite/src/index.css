@@ -345,6 +345,15 @@ body {
   font-weight: 500;
 }
 
+.timeline-content p.minor {
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 .achievements-list {
   list-style: none;
   padding-left: 0;
@@ -964,4 +973,51 @@ body {
   color: var(--text-light);
   margin-bottom: 2rem;
   max-width: 800px;
+}
+
+.courses-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.courses-section h5 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.course-category h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+}
+
+.courses-list {
+  list-style: none;
+  padding: 0;
+}
+
+.courses-list li {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.courses-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
 }
