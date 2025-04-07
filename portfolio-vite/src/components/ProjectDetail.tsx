@@ -36,7 +36,7 @@ const projectDetails: Record<string, ProjectDetail> = {
       "/images/projects/recall-pit-screenshot2.png"
     ]
   },
-  'ai-healthcare': {
+  'gfn-chatbot': {
     title: "Microsoft Hack4Good 3.0",
     description: "A multilingual chatbot called FRAME assistant designed for aiding accurate data collection and improving food donation processes.",
     image: "/images/projects/microsoft.png",
@@ -57,7 +57,7 @@ const projectDetails: Record<string, ProjectDetail> = {
   'winrock-dashboard': {
     title: "Winrock International Dashboard",
     description: "A comprehensive dashboard and forms system to streamline information processing for Winrock International.",
-    image: "/images/projects/winrock-dashboard.png",
+    image: "/images/projects/winrock_international_logo.jpeg",
     tech: "React, TypeScript, Node.js",
     link: "#",
     longDescription: "As co-tech lead, I'm developing a comprehensive dashboard system for Winrock International to improve their data management and reporting capabilities.",
@@ -75,7 +75,7 @@ const projectDetails: Record<string, ProjectDetail> = {
   'h4i-application': {
     title: "Hack4Impact Application Tool",
     description: "Led the overhaul of the application process for 200+ prospective applicants.",
-    image: "/images/projects/h4i-application.png",
+    image: "/images/projects/h4i-logo.jpeg",
     tech: "React, Node.js, MongoDB",
     link: "#",
     longDescription: "I led the development of a new application system for Hack4Impact, significantly improving the application process for prospective members.",
@@ -93,7 +93,7 @@ const projectDetails: Record<string, ProjectDetail> = {
   'all-district-reads': {
     title: "All District Reads",
     description: "Led mobile and web development for the All District Reads nonprofit.",
-    image: "/images/projects/all-district-reads.png",
+    image: "/images/projects/All-District-Reads.png",
     tech: "React Native, React, Node.js",
     link: "#",
     longDescription: "I led the development of both mobile and web platforms for All District Reads, creating solutions to improve literacy and education accessibility.",

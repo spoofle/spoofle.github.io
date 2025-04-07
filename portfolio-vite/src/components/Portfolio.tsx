@@ -35,13 +35,13 @@ const projectSections: ProjectSection[] = [
         image: "/images/projects/microsoft.png",
         tech: "Azure OpenAI Services, Copilot Studio, Azure AI",
         link: "https://www.foodbanking.org/",
-        learnMoreLink: "/projects/ai-healthcare"
+        learnMoreLink: "/projects/gfn-chatbot"
       }
     ]
   },
   {
-    title: "Other Projects",
-    description: "Additional projects demonstrating my diverse skill set and experience.",
+    title: "Hack4Impact-UMD Projects",
+    description: "Projects I have lead as a Tech Lead at Hack4Impact-UMD",
     projects: [
       {
         title: "Winrock International Dashboard",
@@ -54,15 +54,15 @@ const projectSections: ProjectSection[] = [
       {
         title: "Hack4Impact Application Tool",
         description: "Led the overhaul of the application process for 200+ prospective applicants.",
-        image: "/images/projects/h4i-application.png",
+        image: "/images/projects/h4i-logo.jpeg",
         tech: "React, Node.js, MongoDB",
-        link: "#",
+        link: "https://docs.google.com/presentation/d/1IGwWg_PbLcLFFkpzJOKfMqFqBDPa3l0k/edit?usp=sharing&ouid=109276528809072004783&rtpof=true&sd=true",
         learnMoreLink: "/projects/h4i-application"
       },
       {
         title: "All District Reads",
         description: "Led mobile and web development for the All District Reads nonprofit.",
-        image: "/images/projects/all-district-reads.png",
+        image: "/images/projects/All-District-Reads.png",
         tech: "React Native, React, Node.js",
         link: "#",
         learnMoreLink: "/projects/all-district-reads"

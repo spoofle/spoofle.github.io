@@ -83,7 +83,7 @@ const About = () => {
               </h3>
               <div className="timeline">
                 <div className="timeline-item">
-                  <div className="timeline-year">2021 - Present</div>
+                  <div className="timeline-year">August 2023 - Present</div>
                   <div className="timeline-content">
                     <h4>
                       <img 
@@ -95,9 +95,10 @@ const About = () => {
                     </h4>
                     <p>B.S. in Computer Science: Machine Learning Track</p>
                     <p className="minor">Minor in Neuroscience</p>
+                    <p className="minor">Expected Graduation: December 2026</p>
                     <ul className="achievements-list">
                       <li>Dean's List: Spring 2024, Fall 2024</li>
-                      <li>Hack4Impact Tech Lead</li>
+                      <li>Hack4Impact-UMD Tech Lead, Incoming Director of Engineering - Fall 2025</li>
                       <li>Maryland Science Cafe Treasurer</li>
                       <li>Perception and Robotics Group: Computer Vision Researcher</li>
                       <li>Teaching Assistant for CMSC 330: Organization of Programming Languages</li>
