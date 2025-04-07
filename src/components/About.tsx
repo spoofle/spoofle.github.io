@@ -87,7 +87,7 @@ const About = () => {
                   <div className="timeline-content">
                     <h4>
                       <img 
-                        src="/images/logos/umd.png" 
+                        src="../images/logos/umd.png" 
                         alt="UMD Logo" 
                         className="company-icon umd-logo"
                       />
@@ -150,7 +150,7 @@ const About = () => {
                   <div className="timeline-content">
                     <h4>
                       <img 
-                        src="/public/images/logos/shopify.png" 
+                        src="../images/logos/shopify.png" 
                         alt="Shopify Logo" 
                         className="company-icon"
                       />
@@ -167,7 +167,7 @@ const About = () => {
                   <div className="timeline-content">
                     <h4>
                       <img 
-                        src="/public/images/logos/rising-team.png" 
+                        src="../images/logos/rising-team.png" 
                         alt="Rising Team Logo" 
                         className="company-icon"
                       />
