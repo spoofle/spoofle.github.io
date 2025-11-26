@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faGoogle, faMicrosoft, faAmazon, faShopify } from '@fortawesome/free-brands-svg-icons';
-import { faUniversity, faBuilding, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin/*, faGoogle, faMicrosoft, faAmazon, faShopify*/ } from '@fortawesome/free-brands-svg-icons';
+import { faUniversity, faBuilding/*, faUsers*/ } from '@fortawesome/free-solid-svg-icons';
 import spoofleImg from '../images/spoofle.png';
 import umdLogo from '../images/logos/umd.png';
 import shopifyLogo from '../images/logos/shopify.png';

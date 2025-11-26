@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap, faMicroscope, faBrain, faRobot, faLanguage, faFlask } from '@fortawesome/free-solid-svg-icons';
-
+import { faGraduationCap, faBrain, faRobot, faFlask } from '@fortawesome/free-solid-svg-icons';
+// faMicroscope, faLanguage
 const Research = () => {
   const researchAreas = [
     {
