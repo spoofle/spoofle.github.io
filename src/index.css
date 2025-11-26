@@ -54,6 +54,10 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
+.header-logo {
+  text-decoration: none;
+}
+
 .header-content {
   display: flex;
   justify-content: space-between;
