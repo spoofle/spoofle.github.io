@@ -1,5 +1,10 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import recallPitLogo from '../images/projects/recall-pit.png'
+import microsoftLogo from '../images/projects/microsoft.png'
+import winrockLogo from '../images/projects/winrock_international_logo.jpeg'
+import h4iLogo from '../images/projects/h4i-logo.jpeg'
+import adrLogo from '../images/projects/All-District-Reads.png'
 
 interface Project {
   title: string;
@@ -24,7 +29,7 @@ const projectSections: ProjectSection[] = [
       {
         title: "Recall Pit",
         description: "A mobile app that processes and displays product recalls from USDA, FDA, and CPSC datasets in a user-friendly interface.",
-        image: "/images/projects/recall-pit.png",
+        image: recallPitLogo,
         tech: "Flutter, Dart, Google Cloud, Google Translate API",
         link: "https://recallpit.com/",
         learnMoreLink: "/projects/recall-pit"
@@ -32,7 +37,7 @@ const projectSections: ProjectSection[] = [
       {
         title: "Microsoft Hack4Good 3.0",
         description: "A multilingual chatbot called FRAME assistant designed for aiding accurate data collection and improving food donation processes.",
-        image: "/images/projects/microsoft.png",
+        image: microsoftLogo,
         tech: "Azure OpenAI Services, Copilot Studio, Azure AI",
         link: "https://www.foodbanking.org/",
         learnMoreLink: "/projects/gfn-chatbot"
@@ -46,24 +51,24 @@ const projectSections: ProjectSection[] = [
       {
         title: "Winrock International Dashboard",
         description: "A comprehensive dashboard and forms system to streamline information processing for Winrock International.",
-        image: "/images/projects/winrock_international_logo.jpeg",
-        tech: "React, TypeScript, Node.js",
+        image: winrockLogo,
+        tech: "React, TypeScript, Firebase",
         link: "#",
         learnMoreLink: "/projects/winrock-dashboard"
       },
       {
         title: "Hack4Impact Application Tool",
         description: "Led the overhaul of the application process for 200+ prospective applicants.",
-        image: "/images/projects/h4i-logo.jpeg",
-        tech: "React, Node.js, MongoDB",
+        image: h4iLogo,
+        tech: "React, Typescript, Firebase",
         link: "https://docs.google.com/presentation/d/1IGwWg_PbLcLFFkpzJOKfMqFqBDPa3l0k/edit?usp=sharing&ouid=109276528809072004783&rtpof=true&sd=true",
         learnMoreLink: "/projects/h4i-application"
       },
       {
         title: "All District Reads",
         description: "Led mobile and web development for the All District Reads nonprofit.",
-        image: "/images/projects/All-District-Reads.png",
-        tech: "React Native, React, Node.js",
+        image: adrLogo,
+        tech: "React Native, React, Typescript, Firebase",
         link: "#",
         learnMoreLink: "/projects/all-district-reads"
       }
@@ -122,4 +127,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio; 
+export default Portfolio;

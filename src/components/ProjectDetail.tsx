@@ -1,5 +1,12 @@
 import { motion } from 'framer-motion';
 import { useParams } from 'react-router-dom';
+import recallPitLogo from '../images/projects/recall-pit.png'
+import microsoftLogo from '../images/projects/microsoft.png'
+import winrockLogo from '../images/projects/winrock_international_logo.jpeg'
+import h4iLogo from '../images/projects/h4i-logo.jpeg'
+import adrLogo from '../images/projects/All-District-Reads.png'
+
+
 
 interface ProjectDetail {
   title: string;
@@ -17,7 +24,7 @@ const projectDetails: Record<string, ProjectDetail> = {
   'recall-pit': {
     title: "Recall Pit",
     description: "A mobile app that processes and displays product recalls from USDA, FDA, and CPSC datasets in a user-friendly interface.",
-    image: "/images/projects/recall-pit.png",
+    image: recallPitLogo,
     tech: "Flutter, Dart, Google Cloud, Google Translate API",
     link: "https://recallpit.com/",
     longDescription: "Recall Pit is a comprehensive mobile application designed to keep users informed about product recalls across various categories. The app aggregates data from multiple government agencies and presents it in an intuitive, user-friendly interface.",
@@ -32,14 +39,14 @@ const projectDetails: Record<string, ProjectDetail> = {
       "Created a clean, card-based UI with filtering and search capabilities"
     ],
     screenshots: [
-      "/images/projects/recall-pit-screenshot1.png",
-      "/images/projects/recall-pit-screenshot2.png"
+      "../../images/projects/recall-pit-screenshot1.png",
+      "../../images/projects/recall-pit-screenshot2.png"
     ]
   },
   'gfn-chatbot': {
     title: "Microsoft Hack4Good 3.0",
     description: "A multilingual chatbot called FRAME assistant designed for aiding accurate data collection and improving food donation processes.",
-    image: "/images/projects/microsoft.png",
+    image: microsoftLogo,
     tech: "Azure OpenAI Services, Copilot Studio, Azure AI",
     link: "https://www.foodbanking.org/",
     longDescription: "The FRAME assistant is an AI-powered chatbot developed to streamline food bank operations and improve data collection processes. It helps food banks manage donations more efficiently and ensures accurate tracking of food items.",
@@ -57,12 +64,12 @@ const projectDetails: Record<string, ProjectDetail> = {
   'winrock-dashboard': {
     title: "Winrock International Dashboard",
     description: "A comprehensive dashboard and forms system to streamline information processing for Winrock International.",
-    image: "/images/projects/winrock_international_logo.jpeg",
-    tech: "React, TypeScript, Node.js",
+    image: winrockLogo,
+    tech: "React, TypeScript, Firebase",
     link: "#",
     longDescription: "As co-tech lead, I'm developing a comprehensive dashboard system for Winrock International to improve their data management and reporting capabilities.",
     challenges: [
-      "Managing complex data relationships",
+      "Managing access management across users (clients, suppliers, admin)",
       "Creating an intuitive user interface for non-technical users",
       "Ensuring data security and compliance"
     ],
@@ -75,8 +82,8 @@ const projectDetails: Record<string, ProjectDetail> = {
   'h4i-application': {
     title: "Hack4Impact Application Tool",
     description: "Led the overhaul of the application process for 200+ prospective applicants.",
-    image: "/images/projects/h4i-logo.jpeg",
-    tech: "React, Node.js, MongoDB",
+    image: h4iLogo,
+    tech: "React, Typescript, Firebase",
     link: "#",
     longDescription: "I led the development of a new application system for Hack4Impact, significantly improving the application process for prospective members.",
     challenges: [
@@ -93,8 +100,8 @@ const projectDetails: Record<string, ProjectDetail> = {
   'all-district-reads': {
     title: "All District Reads",
     description: "Led mobile and web development for the All District Reads nonprofit.",
-    image: "/images/projects/All-District-Reads.png",
-    tech: "React Native, React, Node.js",
+    image: adrLogo,
+    tech: "React Native, React, Typescript, Firebase",
     link: "#",
     longDescription: "I led the development of both mobile and web platforms for All District Reads, creating solutions to improve literacy and education accessibility.",
     challenges: [
@@ -189,4 +196,4 @@ const ProjectDetail = () => {
   );
 };
 
-export default ProjectDetail; 
+export default ProjectDetail;

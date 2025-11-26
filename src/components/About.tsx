@@ -2,6 +2,11 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faGoogle, faMicrosoft, faAmazon, faShopify } from '@fortawesome/free-brands-svg-icons';
 import { faUniversity, faBuilding, faUsers } from '@fortawesome/free-solid-svg-icons';
+import spoofleImg from '../images/spoofle.png';
+import umdLogo from '../images/logos/umd.png';
+import shopifyLogo from '../images/logos/shopify.png';
+import risingTeamLogo from '../images/logos/rising-team.png';
+
 
 const About = () => {
   return (
@@ -19,7 +24,7 @@ const About = () => {
             className="profile-container"
           >
             <img 
-              src="/images/spoofle.png" 
+              src={spoofleImg} 
               alt="Hita Thota's Profile Picture" 
               className="profile-image"
             />
@@ -52,7 +57,7 @@ const About = () => {
             <div className="content-section">
               <h2>About Me</h2>
               <p>
-                I'm Hita Thota, a Computer Science + Neuroscience student at the University of Maryland with a passion for AI and software development. I'm particularly interested in the intersection of technology and healthcare, where I believe we can make the most meaningful impact.
+                I'm Hita Thota, a Computer Science + Neuroscience student at the University of Maryland with a passion for AI and software development.
               </p>
               
               <div>
@@ -61,12 +66,13 @@ const About = () => {
                   <li className="expertise-item">Frontend & Backend Development</li>
                   <li className="expertise-item">Mobile App Development</li>
                   <li className="expertise-item">Machine Learning & Computer Vision</li>
+                  <li className="expertise-item">Deep Learning</li>
                   <li className="expertise-item">Large Language Models</li>
                 </ul>
               </div>
               
               <p>
-                I'm particularly fascinated by the intersection of AI and healthcare, and I'm currently working on projects related to LLMs in medical applications.
+                I'm particularly fascinated by the intersection of computer vision and neuroscience, and I'm currently working on projects related to the application of biological processes in vision.
               </p>
             </div>
 
@@ -87,18 +93,18 @@ const About = () => {
                   <div className="timeline-content">
                     <h4>
                       <img 
-                        src="../images/logos/umd.png" 
+                        src={umdLogo} 
                         alt="UMD Logo" 
                         className="company-icon umd-logo"
                       />
                       University of Maryland
                     </h4>
                     <p>B.S. in Computer Science: Machine Learning Track</p>
-                    <p className="minor">Minor in Neuroscience</p>
+                    <p className="minor">Minors in Neuroscience and Mathematics</p>
                     <p className="minor">Expected Graduation: December 2026</p>
                     <ul className="achievements-list">
-                      <li>Dean's List: Spring 2024, Fall 2024</li>
-                      <li>Hack4Impact-UMD Tech Lead, Incoming Director of Engineering - Fall 2025</li>
+                      <li>Dean's List: Spring 2024, Fall 2024, Spring 2025</li>
+                      <li>Hack4Impact-UMD Director of Engineering, Tech Lead</li>
                       <li>Maryland Science Cafe Treasurer</li>
                       <li>Perception and Robotics Group: Computer Vision Researcher</li>
                       <li>Teaching Assistant for CMSC 330: Organization of Programming Languages</li>
@@ -121,8 +127,14 @@ const About = () => {
                         <div className="course-category">
                           <h6>Neuroscience</h6>
                           <ul className="courses-list">
-                            <li>Introduction to Neuroscience</li>
                             <li>Science of Sleep and Biological Rhythms</li>
+                            <li>Fundamentals of Behavior and Learning</li>
+                          </ul>
+                          <h6>Mathematics</h6>
+                          <ul className="courses-list">
+                            <li>Linear Algebra</li>
+                            <li>Linear Optimization</li>
+                            <li>Probability Theory</li>
                             {/* <li>Neurobiology</li> */}
                           </ul>
                         </div>
@@ -145,20 +157,42 @@ const About = () => {
                 Experience
               </h3>
               <div className="timeline">
+                {/* <div className="timeline-item">
+                  <div className="timeline-year">2026</div>
+                  <div className="timeline-content">
+                    <h4>
+                      <FontAwesomeIcon icon={faGoogle} />
+                      Google
+                    </h4>
+                    <p>Incoming Software Engineering Intern</p>
+                    <ul className="achievements-list">
+                      <li>Summer 2026</li>
+                    </ul>
+                    <ul className="achievements-list">
+                      <li>Implemented DevOps AI agent for detecting production incidents and errors</li>
+                      <li>Built MCP tools dealing with incident data for various functionalities in LLM prompting</li>
+                      <li>Wrote and finetuned prompts for Gemini and Claude in incident investigation</li>
+                      <li>Reduced incident investigation time by 50% and improved incident investigation accuracy by 78%</li>
+                    </ul>
+                  </div>
+                </div> */}
                 <div className="timeline-item">
                   <div className="timeline-year">2025</div>
                   <div className="timeline-content">
                     <h4>
                       <img 
-                        src="../images/logos/shopify.png" 
+                        src={shopifyLogo} 
                         alt="Shopify Logo" 
                         className="company-icon"
                       />
                       Shopify
                     </h4>
-                    <p>Incoming Software Engineering Intern</p>
+                    <p>Software Engineering Intern</p>
                     <ul className="achievements-list">
-                      <li>Summer 2025 - Team TBD</li>
+                      <li>Implemented DevOps AI agent for detecting production incidents and errors</li>
+                      <li>Built MCP tools dealing with incident data for various functionalities in LLM prompting</li>
+                      <li>Wrote and finetuned prompts for Gemini and Claude in incident investigation</li>
+                      <li>Reduced incident investigation time by 50% and improved incident investigation accuracy by 78%</li>
                     </ul>
                   </div>
                 </div>
@@ -167,7 +201,7 @@ const About = () => {
                   <div className="timeline-content">
                     <h4>
                       <img 
-                        src="../images/logos/rising-team.png" 
+                        src={risingTeamLogo} 
                         alt="Rising Team Logo" 
                         className="company-icon"
                       />
@@ -175,9 +209,10 @@ const About = () => {
                     </h4>
                     <p>Software Engineering Intern</p>
                     <ul className="achievements-list">
-                      <li>Built and optimized features for team development platform</li>
-                      <li>Worked on frontend and backend development</li>
-                      <li>Contributed to improving team collaboration tools</li>
+                      <li>Integrated a messaging functionality based on an existing Python application within the company to provide more user interaction</li>
+                      <li>Designed and successfully implemented a Python interpreter to facilitate the conversion of company files to the newer framework - end product allowed software engineers to input the file into the interpreter and receive an output of the newly converted file</li>
+                      <li>Built product components based on Figma files that are now actively used by product customers </li>
+                      <li>Designed an OAuth Authentication flow between the company app and Zapier and implemented it using Python and Javascript</li>
                     </ul>
                   </div>
                 </div>
@@ -190,4 +225,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;

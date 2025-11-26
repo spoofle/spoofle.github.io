@@ -7,26 +7,38 @@ const Research = () => {
     {
       icon: faRobot,
       title: "Robotics and Perception",
-      description: "Research in computer vision and optical flow using event camera data."
+      description: "Research in computer vision and optical flow using event camera data. Also working on undergraduate thesis in gaze algorithms inspired by biological processes."
     },
     {
       icon: faBrain,
-      title: "LLM Research",
-      description: "Exploring the efficacy of Large Language Models in healthcare applications, particularly in oncology and medical documentation."
+      title: "Multimodal Object Understanding",
+      description: "Research in optimized object representation in three separate modalities."
     },
     {
       icon: faFlask,
       title: "Medical AI Applications",
-      description: "Developing and evaluating AI solutions for healthcare, including medical form processing and patient query systems."
+      description: "Developing and evaluating AI solutions for healthcare, including medical form processing and patient query systems through the use of LLMs."
     }
   ];
 
   const researchProjects = [
     {
+      title: "Multimodal Deep Learning Research",
+      period: "Sept. 2025 – Present",
+      description: "Building off of ObjectFolder 2.0 (Gao et al.) to implement a more geometrically consistent object representation to allow for more optimized object representation.",
+      tech: "Python, Deep Learning, Multimodal Learning"
+    },
+    {
+      title: "Robotics and Perception Group: Gaze Algorithms Research",
+      period: "Aug. 2025 – Present",
+      description: "Taking inspiration from the foveal and periphiral vision within the eye to implement a more optimized gaze algorithm. Undergraduate thesis topic.",
+      tech: "Python, Event Camera, Neuroscience"
+    },
+    {
       title: "Robotics and Perception Group: Computer Vision Research",
       period: "Dec. 2024 – Present",
-      description: "Currently conducting research in calculating optical flow using event camera data",
-      tech: "Python"
+      description: "Currently conducting research in calculating optical flow using event camera data.",
+      tech: "Python, Event Camera"
     },
     {
       title: "Exploring LLM Efficacy for Oncology Patient Queries",
@@ -42,6 +54,10 @@ const Research = () => {
     }
   ];
 
+  // const publications = [
+
+  // ]
+
   return (
     <section className="research-section">
       <div className="container">
@@ -55,7 +71,7 @@ const Research = () => {
             Research
           </h2>
           <p className="section-description">
-            Exploring the frontiers of AI and healthcare through research and innovation.
+            Exploring the frontiers of AI/ML and vision through research and innovation.
           </p>
 
           <div className="research-areas">
@@ -75,7 +91,7 @@ const Research = () => {
           </div>
 
           <div className="research-projects">
-            <h3 className="subsection-title">Current Research Projects</h3>
+            <h3 className="subsection-title">Research Projects</h3>
             <div className="projects-list">
               {researchProjects.map((project, index) => (
                 <motion.div
@@ -121,8 +137,8 @@ const Research = () => {
                 </motion.div>
               ))}
             </div>
-          </div>
-          */}
+          </div> */}
+         
         </motion.div>
       </div>
     </section>
