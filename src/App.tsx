@@ -1,27 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Blog from './components/Blog';
-import Resume from './components/Resume';
 import Research from './components/Research';
+import OffTheClock from './components/OffTheClock';
 import Footer from './components/Footer';
-import ProjectDetail from './components/ProjectDetail';
-import ResearchAbstract from './components/ResearchAbstract';
-
-// const Home = () => {
-//   return (
-//     <>
-//       <About />
-//       <div className="projects-research-container">
-//         <Portfolio />
-//         <Research />
-//       </div>
-//       <Blog />
-//       <Resume />
-//     </>
-//   );
-// };
 
 const App = () => {
   return (
@@ -30,19 +12,13 @@ const App = () => {
         <Header />
         <main>
           <Routes>
-            {/* Home page */}
             <Route path="/" element={<About />} />
 
-            {/* Detail pages */}
-            <Route path="/projects/:projectId" element={<ProjectDetail />} />
-            <Route path="/research/:projectId" element={<ResearchAbstract />} />
-
-            {/* Individual pages */}
             <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/resume" element={<Resume />} />
+            <Route path="/work" element={<Research />} />
             <Route path="/research" element={<Research />} />
+            <Route path="/off-the-clock" element={<OffTheClock />} />
+            <Route path="*" element={<About />} />
           </Routes>
         </main>
         <Footer />
