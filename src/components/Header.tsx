@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-//import { motion } from 'framer-motion';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -9,11 +8,8 @@ const Header = () => {
           <h1>Hita Thota</h1>
         </Link>
         <nav className="nav">
-          {/* <Link to="/about" className="nav-link">About</Link> */}
-          <Link to="/portfolio" className="nav-link">Portfolio</Link>
-          <Link to="/research" className="nav-link">Research</Link>
-          <Link to="/blog" className="nav-link">Blog</Link>
-          <Link to="/resume" className="nav-link">Resume</Link>
+          <NavLink to="/work" className="nav-link">work</NavLink>
+          <NavLink to="/off-the-clock" className="nav-link">off the clock</NavLink>
         </nav>
       </div>
     </header>
